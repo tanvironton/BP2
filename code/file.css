@@ -6,7 +6,9 @@
 }
 
 body {
-  background-color: #120424;
+  /* background-color: #120424; */
+  background-color: #1b0c30; 
+  font-family: 'inter';
 }
 
 img {
@@ -179,6 +181,82 @@ img {
   min-width: 210px;
 }
 
+/* About Section */
+.about-podcast-section{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 25px;
+  font-family: "inter" ;
+}
+.content-wrapper{
+  max-width:800px;
+  margin-bottom: 40px;;
+}
+.content-wrapper h2{
+  font-size: 3rem;
+  color: #ffffff;
+}
+.content-wrapper p{
+  font-size: 1rem;
+  color: #e5e5e5;
+  font-weight:300;
+  padding-top: 15px;
+  letter-spacing: 1px ;
+}
+
+.divider {
+  width: 100%;
+  max-width: 70vw; /* Matches the width of the stats area */
+  border-top: 1px solid rgba(85, 85, 85, 0.1); /* Very subtle, semi-transparent white line */
+  margin-bottom: 60px; /* Space between line and stats */
+}
+.stats-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width:1000px;
+}
+
+.stat-item{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:12px;
+
+}
+.stat-number{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #00FF88;
+
+}
+
+.stat-label{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      /* RESPONSIVE DESIGN */
 /* TABLET */
 @media (max-width: 992px) {
   .navbar {
