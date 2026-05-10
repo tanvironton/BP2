@@ -1,0 +1,265 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+ 
+}
+/* NAV STYLE */
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1A0B2E;
+    padding:20px;
+    border-bottom: 1px solid rgb(148, 148, 148);
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item
+{
+    list-style: none ;
+    margin-right: 30px;
+    
+}
+.nav-item a{
+        text-decoration: none;
+        color:white;
+
+}
+.btn-primary{
+    background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8 );
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 24px ;
+    border-radius: 30px;
+    border:none;
+    color:white;
+    text-decoration: none;
+    display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.btn-link{
+    text-decoration: none;
+}
+.nav-btn{
+    display: inline-flex;
+}
+.logo-img{
+    max-width:180px;
+}
+
+.menu-check{
+    display:none;
+}
+.menu-toggle{
+    display: none;
+    color:white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+
+/* Hero  Section */
+
+.banner{
+    min-height: calc(100vh - 90px);
+    background-image: url(./assets/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.podcast-grp{
+    position: relative;
+    width: fit-content;
+    margin-bottom: 30px;
+  
+}
+.podcast-circle{
+    position: relative;
+    width:300px;
+}
+.microphone{
+
+    width: 90px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.badge-btn{
+    position: absolute;
+    top:10%;
+    right: 0%;
+    font-size:18px;
+    font-weight: 600;
+    background-color: #00FF88;
+    padding: 8px 16px;
+    border:none;
+    border-radius: 50px;
+    box-shadow: 0 0 24px  rgba(76, 255, 136, 0.45);
+
+}
+.podcast-content{
+     text-align: center;
+     margin-bottom: 30px;
+     max-width: 750px;
+}
+.m-t{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 12px;
+}
+.m-p{
+    font-size: 16px;
+    color:white;
+}
+.btn-secondary{
+    text-decoration: none;
+    padding: 14px 24px;
+    font-size: 16px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #00FF88;
+    text-decoration: none;
+    color: white;
+    font-weight:500;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+.podcast-btn{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------- 
+                RESPONSIVE DESIGN
+                ----------------------------------------------------------------------
+*/
+/* Tablet */
+
+@media (max-width: 992px) {
+    
+    .podcast-circle{
+        width: 250px;
+
+    }
+    .microphone{
+        width: 78px;
+    }
+    .m-t{
+        font-size: 55px;
+    }
+    .m-p{
+        font-size:18px;
+        max-width: 600px;
+       
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width:768px){
+     
+    .banner{
+        min-height: auto;
+        padding: 30px 15px;
+        background-image: url(./assets/mobile-hero.png);
+        background-position: center top;
+        background-size: cover;
+    }
+    .podcast-circle{
+        width:220px;
+    }
+    .microphone{
+        width: 70px;
+    }
+    .podcast-btn{
+        padding-bottom: 30px;
+
+    }
+    /* Hamberg Menu */
+
+    .menu-toggle{
+    display: block;
+    color:white;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+    .menu-check:checked ~ .nav-links{
+    display: flex;
+}
+
+    .menu-check:checked ~ .open-icon{
+        display: none;
+    }
+    .menu-check:checked ~ .close-icon{
+        display: block;
+    }
+     .close-icon{
+        display: none;
+    }
+
+    .nav-btn{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #1A0B2E;
+        padding: 20px;
+    }
+
+}
+@media (max-width:650px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .logo-img{
+        width:100%;
+    }
+}
+
+

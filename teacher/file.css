@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #120424;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 60px;
+  background-color: #1A0B2E;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo-img {
+  width: 180px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 24px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(to left, #F7E93F, #FB09B4, #9100F8);
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+/* HERO */
+.banner {
+  min-height: calc(100vh - 89px);
+  background-image: url('../assets/hero-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 60px;
+  text-align: center;
+}
+
+.podcast-grp {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.podcast-circle {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+}
+
+.microphone {
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+}
+
+.badge-btn {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  background-color: #4cff88;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  z-index: 4;
+  box-shadow: 0 0 24px rgba(76, 255, 136, 0.45);
+}
+
+.wave {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 360px;
+  opacity: 0.95;
+}
+
+.wave-left {
+  right: 70%;
+}
+
+.wave-right {
+  left: 70%;
+}
+
+.podcast-content {
+  max-width: 760px;
+}
+
+.m-t {
+  font-size: 72px;
+  line-height: 1.1;
+  color: white;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.m-p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+  margin-bottom: 28px;
+}
+
+.podcast-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1.5px solid #00ff88;
+  background: transparent;
+  color: #00ff88;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hero-btn {
+  min-width: 210px;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .logo-img {
+    width: 160px;
+  }
+
+  .wave {
+    width: 240px;
+  }
+
+  .podcast-circle {
+    width: 260px;
+  }
+
+  .microphone {
+    width: 78px;
+  }
+
+  .m-t {
+    font-size: 56px;
+  }
+
+  .m-p {
+    font-size: 18px;
+    max-width: 640px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 24px;
+  }
+
+  .nav-links,
+  .nav-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .banner {
+    min-height: auto;
+    padding: 24px 20px 50px;
+    background-image: url('../assets/mobile-hero.png');
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .podcast-grp {
+    margin-top: 10px;
+    margin-bottom: 28px;
+  }
+
+  .podcast-circle {
+    width: 230px;
+  }
+
+  .microphone {
+    width: 68px;
+  }
+
+  .badge-btn {
+    top: 4px;
+    right: -4px;
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .wave {
+    width: 180px;
+  }
+
+  .wave-left {
+    right: 72%;
+  }
+
+  .wave-right {
+    left: 72%;
+  }
+
+  .m-t {
+    font-size: 42px;
+    margin-bottom: 12px;
+  }
+
+  .m-p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
+    margin-bottom: 26px;
+  }
+
+  .podcast-btn {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .hero-btn {
+    min-width: 170px;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .logo-img {
+    width: 150px;
+  }
+
+  .podcast-circle {
+    width: 210px;
+  }
+
+  .microphone {
+    width: 60px;
+  }
+
+  .wave {
+    width: 140px;
+  }
+
+  .m-t {
+    font-size: 34px;
+  }
+
+  .m-p {
+    font-size: 15px;
+  }
+
+  .hero-btn {
+    min-width: 150px;
+    font-size: 14px;
+    padding: 13px 16px;
+  }
+}
