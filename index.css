@@ -73,7 +73,7 @@ img {
 /* HERO */
 .banner {
   min-height: calc(100vh - 89px);
-  background-image: url('../assets/hero-bg.png');
+  background-image: url('assets/hero-bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -473,7 +473,7 @@ img {
 
 .site-footer {
   background-color: #120e24;
-  background-image: url('../assets/footer-bg.png'); 
+  background-image: url('assets/footer-bg.png'); 
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -594,7 +594,7 @@ img {
   .banner {
     min-height: auto;
     padding: 24px 20px 50px;
-    background-image: url('../assets/mobile-hero.png');
+    background-image: url('assets/mobile-hero.png');
     background-position: center top;
     background-size: cover;
   }
@@ -749,9 +749,13 @@ img {
     padding: 13px 16px;
   }
   .stats-grid{
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     
+}
+.content-wrapper h2 {
+    font-size: 2rem;
+    color: #ffffff;
 }
 
 }
