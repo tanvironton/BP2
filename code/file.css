@@ -463,12 +463,78 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* The actual image inside the frame */
 .social-icon img {
   width: 20px; 
   height: 20px;
   object-fit: contain;
+    display: block;
+
+}
+
+.site-footer {
+  background-color: #120e24;
+  background-image: url('../assets/footer-bg.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 100px 20px; 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 48px; 
+}
+
+
+.footer-logo {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #f36946, #9a00e8, #f64f59);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+}
+
+
+.footer-socials {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  text-decoration: none;
+  color: #d1d0da;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease; 
+}
+
+.social-link:hover {
+  color: #ffffff; 
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
   display: block;
+}
+
+
+.copyright {
+  color: #8c89a4;
+  font-size: 0.9rem;
+  margin: 0;
 }
 
 
@@ -616,8 +682,39 @@ img {
     justify-content: center; 
   }
 }
-/* About Section */
+@media (max-width: 600px) {
+  
+  .social-icon{
+    width: 20px;
+    height:20px;
+  }
+  .site-footer {
+    padding: 60px 20px;
+    gap: 36px;
+    background-size: 100% 100%;
+    background-position: center;
+  }
 
+  .footer-logo {
+    font-size: 2.8rem;
+  }
+  
+  .footer-socials {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    max-width: 320px;
+    width:100%;
+    margin:0 auto;
+        justify-content: center; 
+
+    column-gap: 24px; 
+    row-gap: 20px;
+  }
+  .copyright {
+    text-align: center; 
+    line-height: 1.5; 
+  }
+}
 
 
 /* SMALL MOBILE */
@@ -657,4 +754,9 @@ img {
     
 }
 
+}
+@media (max-width: 400px) {
+  .footer-socials {
+    flex-direction: column; 
+  }
 }
